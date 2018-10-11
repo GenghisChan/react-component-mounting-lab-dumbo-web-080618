@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 import Timer from './Timer'
 
 class App extends Component {
+  constructor(){
+   super()
+  }
 
   //no props being used here, so we can use the shorthand declaration of state
   state = {
@@ -10,10 +13,16 @@ class App extends Component {
   }
 
 
-  //Your code here:
+  componentDidMount() {
+    console.log(this.state)
+    this.handleAddTimer()
+  }
 
 
+  componentWillUnmount() {
 
+
+  }
 
 
 
